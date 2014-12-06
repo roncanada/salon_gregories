@@ -1,0 +1,83 @@
+/*  Salon Gregories stylesheet  */
+
+body {
+	margin: 0px 5px 0px 5px;
+	padding: 0px 0px 0px 0px;
+	font-family: verdana, arial, helvetica, sans-serif;
+	color: #333;
+	background-image: url(../img/bg.png); background-repeat: repeat-x; background-attachment: fixed;
+	}
+	
+	
+	/*  Classes  */
+p {
+	font-size: 11px;
+	text-align: justify;
+	line-height: 1.2em;
+}
+
+h1 {
+	font-size: 14px;
+	letter-spacing: 2px;
+	color: #333;
+}
+
+h2 {
+	font-size: 12px;
+	text-decoration: none;
+}
+
+h3 {
+	font-size: 9px;
+}
+
+
+	/*  Links  */
+A:link {
+	text-decoration: none; 
+	color: #073771;
+}
+
+A:visited {
+	text-decoration: none;
+	color: #073771;
+}
+
+A:hover {
+	text-decoration: underline;
+	color: #687EA3;
+}
+
+A:active {
+	text-decoration: none;
+}
+
+
+	/*  Selectors  */
+#footer ul {
+	margin-left: 0;
+	padding-left: 0;
+	display: inline;
+	} 
+
+#footer ul li {
+	margin-left: 0;
+	padding: 3px 10px;
+	border-left: 1px solid #70A7BF;
+	list-style: none;
+	display: inline;
+	}
+	
+#footer ul li.first {
+	margin-left: 0;
+	border-left: none;
+	list-style: none;
+	display: inline;
+	}
+	
+#footer ul li.first {
+	margin-left: 0;
+ 	border-left: none;
+	list-style: none;
+	display: inline;
+	}

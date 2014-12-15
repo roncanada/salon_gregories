@@ -28,6 +28,28 @@ $(document).ready(function() {
 		}, 3000);
 	});
 
+
+
+
+
+	//Validate and run the contact form
+	$('#submitButton').click(function(){
+		var valid = true;
+
+		$(".form-input").each(function() {
+			if ($(this).val().length == 0 && valid) {
+				alert("Please fill in the " + $(this).attr('display-name') + " field before continuing.");
+				valid = false;
+			}
+		});
+
+		if (valid) {
+			$("#contactForm").submit();
+		}
+	})
+
+
+
 	//allows you to show or hide
 	//the nav bar
 	// $('#navButton').click(function() {

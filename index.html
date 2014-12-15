@@ -89,10 +89,33 @@
                 <!-- google API location -->
             </div>
 
-            <div>
-                <!-- PHP contact form via SendGrid API -->
+            <div> <!-- PHP contact form via SendGrid API -->
+                <form method="post" action="contact.php" id="contactForm">
+                    <p>
+                        <label for="firstName">First Name: </label>
+                        <input class="form-input" display-name="First Name" type="text" name="firstName" id="firstName"></input>
+                    </p>    
+                    <p>
+                        <label for="emailAddress">Email: </label>
+                        <input class="form-input" display-name="Email" type="text" name="email" id="email"></input>
+                    </p>
+                    <p>
+                        <label for="phoneNumber">Phone: </label>
+                        <input class="form-input" display-name="Phone" type="text" name="phoneNumber" id="phoneNumber"></input>
+                    </p>
+                    <p>
+                        <label for="emailMsg">Message: </label>
+                        <textarea class="form-input" display-name="Message" type="text" name="emailMsg" id="emailMsg"></textarea> 
+                    </p>
+                </form>
+                <button id="submitButton">
+                    Submit
+                </button>
+
                 <!-- Hours and location,
                  phone num and address  -->
+
+
                 <!-- Email Subscribe form -->
             </div>
         </div>

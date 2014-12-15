@@ -11,9 +11,8 @@
 </head>
 
 <body>
-   
 	<div class="loading"> <!-- Start Loading HTML -->
-    	<h2>applying basecolor </h2>
+    	<h2>applying texture</h2>
 		    <span></span>
 		    <span></span>
 		    <span></span>
@@ -23,22 +22,100 @@
 		    <span></span>
 	</div> <!-- End Loading HTML -->
 
-    <nav>
-       <!--  1. Display butotn to toggle hide nav
-             2. Nav bar via a list -->
-    </nav>
-
     <main>
-        <div class="navButton">
-            <button>
+        <nav>
+       <!--  1. Display butotn to toggle hide nav
+             2. Nav bar via a list
+             3. Nav bar needs acnhor tags
+             4. Needs to change color or highlight when area
+                of page is scrolled to -->
+            <ul>
+                <li id="listAbout">
+                    About Salon Gregories
+                </li>
+
+                <li id="listServices">
+                    Products and Services
+                </li>
+
+                <li id="listGallery">
+                    Gallery of our Work
+                </li>
+                
+                <li id="listContact">
+                    Contact Us
+                </li>
+            </ul>
+        </nav>
+
+        <div id="navButton">
+            <p>
                 +
-            </button>
+            </p>
         </div>
+
+        <div id="logo">
+            <p>Kick Ass Logo Here</p>
+        </div>
+
+
+        <div id="aboutPage">
+            <div>
+                <!-- Description and location (links to google API section in contact portion) -->
+               <!--  hours of operation and number -->
+            </div>
+            <div>
+                <!-- Talks about awards and resident stylists -->
+            </div>
+        </div>
+
+        <div id="servicesPage">
+            <div>
+                <!-- Products and prices -->
+            </div>
+            <div>
+               <!--  Services and prices -->
+            </div>
+        </div>
+
+        <div id="galleryPage">
+            <div>
+                <!-- bad ass gallery slide show of some sort -->
+            </div>
+        </div>
+
+        <div id="contactPage">
+            <div>
+                <!-- google API location -->
+            </div>
+
+            <div>
+                <!-- PHP contact form via SendGrid API -->
+                <!-- Hours and location,
+                 phone num and address  -->
+                <!-- Email Subscribe form -->
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        
+      <!--   Awesome 404 page (missing.html page)-->
+
+
+        <footer>
+            <div id="copyright">
+                <p>Copyright &copy; 2015 Salon Gregories. 
+                {Crafted by <a href="mailto:ronwcanada@gmail.com?Subject=Hello%20there!" target="_top">Ron Canada</a>}</p>
+            </div>
+        </footer>
+
     </main>
+  
 </body>
-
-<footer>
-
-</footer>
-
 </html>

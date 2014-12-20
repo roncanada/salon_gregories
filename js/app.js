@@ -16,21 +16,12 @@ $(document).ready(function() {
 		$('main').css('height', mainHeight + 'px');
 	});
 
-	//fade out load page, fade in main
+	//fade in main
 	$(window).load(function() {
-		setTimeout(function() {
-			$('.loading').fadeOut(400, function() {
-
-				$(window).resize()
-
-				$('main').fadeIn(1200)
-			})
-		}, 3000);
+		$('body').fadeIn(1200)
+		$(window).resize()
 	});
-
-
-
-
+	
 
 	//Validate and run the contact form
 	$('#submitButton').click(function(){

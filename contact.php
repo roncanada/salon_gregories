@@ -50,7 +50,7 @@ try {
 <p><strong>Yikes!</strong> It looks like something went wrong. Please click here to try again.</p>
 <?php
     } else {
-        print_r($response);
+        
 ?>
         <p><strong>Thanks!</strong> We got your message and you'll be hearing from us soon.</p>
 <?php

@@ -11,123 +11,118 @@
 </head>
 
 <body>
-
     <nav>
-        <!--  1. Display butotn to toggle hide nav
-             2. Nav bar via a list
-             3. Nav bar needs acnhor tags
-             4. Needs to change color or highlight when area
-                of page is scrolled to -->
-        <ul>
-            <li id="listAbout">
-                About Salon Gregories
-            </li>
+        <div id="navLogo">
+            <div id="logo">
+                <a href="#">
+                    <img src="images/logo.png"/>
+                </a>
+            </div>
+            <div id="phoneNumber">
+                <p>Newport Beach, CA</p>
+                <p>949.644.6671</p>
+            </div>
+            <div id="socialMedia">
+                <ul>
+                    <li id="instagram">
+                        <a href="http://instagram.com/salongregories.nb" target="_blank">
+                            <img src="images/instagram.png"/>
+                        </a> 
+                    </li>
+                    <li id="facebook">
+                        <a href="https://www.facebook.com/salongregories" target="_blank">
+                            <img src="images/facebook.png"/>
+                        </a> 
+                    </li>
+                    <li id="yelp">
+                         <a href="http://www.yelp.com/biz/salon-gregories-newport-beach-2" target="_blank">
+                            <img src="images/yelp.png"/>
+                        </a> 
+                    </li>
+                    <li id="pinterest">
+                         <a href="#" target="_blank">
+                            <img src="images/pinterest.png"/>
+                        </a> 
+                    </li>
+                </ul>
+            </div>        
+        </div>
 
-            <li id="listServices">
-                Products and Services
-            </li>
+        <!-- End Social Media DIV -->
 
-            <li id="listGallery">
-                Gallery of our Work
-            </li>
-
-            <li id="listContact">
-                Contact Us
-            </li>
-        </ul>
+        <div id="navLinks">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p><a href="index.html" class="navLink">Home</a>
+                            </p>
+                        </td>
+                        <td>
+                            <p><a href="pricing.html" class="navLink">Products and Services</a>
+                            </p>
+                        </td>
+                        <td>
+                            <p><a href="stylists.html" class="navLink">Resident and Guest Stylists</a>
+                            </p>
+                        </td>
+                        <td>
+                            <p><a href="gallery.html" class="navLink">Our Work</a>
+                            </p>
+                        </td>
+                        <td>
+                            <p><a href="contact.html" class="navLink">Contact or Book Appointment</a>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <hr>
+        </div>
     </nav>
+
+    <!-- End Nav Bar -->
+
     <main>
-        <div id="navButton">
-            <p>
-                +
-            </p>
+        <div id="container">
+            <div id="mainSlide">
+                  <!--  slide show of some cuts -->
+
+
+
+
+
+
+
+
+            </div>
+
+            <div id="vertical">
+                <ul id="verticalName">
+                    <li>H</li>
+                    <li>O</li>
+                    <li>M</li>
+                    <li>E</li>
+                </ul>
+            </div>
+        </div> 
+
+        <!-- End Main Container DIV -->
+
+        <div>
+            <hr>
         </div>
 
-        <div id="logo">
-            <p>Kick Ass Logo Here</p>
+    <footer>
+        <div id="copyright">
+            <p>Copyright &copy; 2015 Salon Gregories. <!-- {Crafted by <a href="mailto:ronwcanada@gmail.com?Subject=Hello%20there!" target="_top">Ron Canada</a>} --></p>
         </div>
+    </footer>
 
+   <!-- End Footer -->
 
-        <div id="aboutPage">
-            <div>
-                <!-- Description and location (links to google API section in contact portion) -->
-                <!--  hours of operation and number -->
-            </div>
-            <div>
-                <!-- Talks about awards and resident stylists -->
-            </div>
-        </div>
-
-        <div id="servicesPage">
-            <div>
-                <!-- Products and prices -->
-            </div>
-            <div>
-                <!--  Services and prices -->
-            </div>
-        </div>
-
-        <div id="galleryPage">
-            <div>
-                <!-- bad ass gallery slide show of some sort -->
-            </div>
-        </div>
-
-        <div id="contactPage">
-            <div>
-                <!-- google API location -->
-            </div>
-
-            <div>
-                <!-- PHP contact form via SendGrid API -->
-                <form method="post" action="contact.php" id="contactForm">
-                    <p>
-                        <label for="firstName">First Name: </label>
-                        <input class="form-input" display-name="First Name" type="text" name="firstName" id="firstName"></input>
-                    </p>
-                    <p>
-                        <label for="emailAddress">Email: </label>
-                        <input class="form-input" display-name="Email" type="text" name="email" id="email"></input>
-                    </p>
-                    <p>
-                        <label for="phoneNumber">Phone: </label>
-                        <input class="form-input" display-name="Phone" type="text" name="phoneNumber" id="phoneNumber"></input>
-                    </p>
-                    <p>
-                        <label for="emailMsg">Message: </label>
-                        <textarea class="form-input" display-name="Message" type="text" name="emailMsg" id="emailMsg"></textarea>
-                    </p>
-                </form>
-                <button id="submitButton">
-                    Submit
-                </button>
-
-                <!-- Hours and location,
-                 phone num and address  -->
-
-
-                <!-- Email Subscribe form -->
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-        <!--   Awesome 404 page (missing.html page)-->
-
-
-        <footer>
-            <div id="copyright">
-                <p>Copyright &copy; 2015 Salon Gregories. {Crafted by <a href="mailto:ronwcanada@gmail.com?Subject=Hello%20there!" target="_top">Ron Canada</a>}</p>
-            </div>
-        </footer>
     </main>
-
-
 </body>
-
 </html>

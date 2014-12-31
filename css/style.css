@@ -1,71 +1,184 @@
 /*--- CSS PAGE ---*/
 
-body {
- /*   background: rgba(22, 22, 22, 1);*/
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    display: none;
+html{
+    margin: 10px;
+
 }
 
-h2 {
-    color: #ccc;
-    border-radius: 6px;
-    margin: 0;
-    font: .8em verdana;
-    text-transform: uppercase;
-    letter-spacing: .1em;
+body {
+    
 }
+
+
 
 
 
 
 /*--- NAV CSS ---*/
-
 nav {
     width:100%;
-    height:80px;
-    position:fixed;
-    top:0px;
-    left:0;
+    color: black;
+    text-align: center;
+    font-weight: normal;
+    display: inline-block;
+
+
+}
+#navLogo{
+    padding-top: 10px;
+}
+#logo img{
+    max-width: 60%;
+    height: auto;
+}
+
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav table{
+    width: 100%;
+}
+nav table td {
+    width: 20%;
+    background-color: black;
+    border: 1px solid white;
+    height: 40px;
+    vertical-align: middle;
+}
+nav a:hover {
     color: darkgray;
-    background:black;
-    opacity: .4;
-    z-index: 100;
+}
+
+#phoneNumber {
+    position: relative;
+    float: left;
+    top: 0px;
+    left: 8px;
+    margin-bottom: 6px;
+}
+#phoneNumber p{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+#socialMedia{
+    position: absolute;
+    float: right; 
+    right: 5px;
+    top: 10px;
+}
+#socialMedia li{
+
+    padding: 0px;
+}
+#socialMedia img{
+    max-width: 50%;
+    height: auto;
+
+}
+
+#navLinks{
+    
 }
 
 
-#navButton {
-
+hr{
+  clear: both; 
+  float: none; 
+  width: 100%; 
+  height: 1px;
+  margin: 1.4em 0;
+  border: none; 
+  background: #000000;
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      right bottom,
+      color-stop(0, rgb(255,255,255)),
+      color-stop(0.1, rgb(80,80,80)),
+      color-stop(0.9, rgb(80,80,80)),
+      color-stop(1, rgb(255,255,255))
+  );
+  background-image: -moz-linear-gradient(
+      left center,
+      rgb(255,255,255) 0%,
+      rgb(221,221,221) 10%,
+      rgb(221,221,221) 90%,
+      rgb(255,255,255) 100%
+  );
 }
-
 /*--- END NAV CSS ---*/
 
 
 
 
 
-/*--- START MAIN CSS ---*/
 
+
+/*--- START MAIN CSS ---*/
 main {
-    position: absolute;
-    width: 100%;
-    background-image: url(../images/large1.jpg);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
+    
+}
+
+#container{
+    height: 500px;
+    margin-bottom: 20px;
+
+
+}
+
+#mainSlide{
+    position: relative;
+    float: left;
+    border: solid 2px orange;
+    height: 100%;
+    width: 84%;
 }
 
 
-footer {
+
+#vertical{
+    position: relative;
+    float: right;
+    height: 100%;
+    width: 10%;
+    background-color: black;
+    color: white;
+}
+
+#vertical{
+    top: 0px;
+    bottom: 0px;
+}
+
+#verticalName {
+    position: relative;
+    top: 60px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 80px;
+}
+
+
+
+
+
+footer{
     width:100%;
-    height:16px;
-    position:absolute;
+    position: relative;
+    height:24px;
     bottom:0px;
     left:0px;
     color: darkgray;
     background:black;
     font-size: 10px;
+    text-align: center;
+}
+#copyright {
+    vertical-align: middle;
+    padding-top: 6px;
 }
 footer a{
     text-decoration: none;
@@ -77,6 +190,7 @@ footer a:hover {
 footer a.active {
     color: darkgray;
 }
+
 /*--- END MAIN CSS ---*/
 
 

@@ -46,10 +46,24 @@ nav table td {
     border: 1px solid white;
     height: 40px;
     vertical-align: middle;
+
 }
-nav a:hover {
-    color: darkgray;
+
+#navLinks td{
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
 }
+#navLinks td:hover{
+    background-color: white;
+}
+
+
+
+
+
+
 
 #phoneNumber {
     position: relative;
@@ -123,7 +137,7 @@ main {
 }
 
 #container{
-    height: 500px;
+    height: 450px;
     margin-bottom: 20px;
 
 
@@ -132,9 +146,8 @@ main {
 #mainSlide{
     position: relative;
     float: left;
-    border: solid 2px orange;
     height: 100%;
-    width: 84%;
+    width: 89%;
 }
 
 
@@ -146,6 +159,14 @@ main {
     width: 10%;
     background-color: black;
     color: white;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+#vertical:hover{
+    background-color: white;
+}
 }
 
 #vertical{

@@ -33,19 +33,18 @@ $(document).ready(function() {
 	//Validate and run the contact form
 	$('#submitButton').click(function(){
 		var valid = true;
-
 		$(".form-input").each(function() {
 			if ($(this).val().length == 0 && valid) {
 				alert("Please fill in the " + $(this).attr('display-name') + " field before continuing.");
 				valid = false;
 			}
 		});
-
 		if (valid) {
 			$("#contactForm").submit();
 		}
 	})
 
+	//Polaroid java script 
 	new Photostack( document.getElementById( 'photostack-3' ), {
 				callback : function( item ) {
 					//console.log(item)

@@ -31,6 +31,7 @@
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
+	text-align: center;
 }
 
 .photostack figure {
@@ -132,6 +133,7 @@
 	speak: none;
 	display: inline-block;
 	vertical-align: top;
+	text-align: center;
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
@@ -151,18 +153,21 @@
 	background: black;
 	-webkit-transform: scale(1);
 	transform: scale(1);
+	text-align: center;
 }
 
 .photostack nav span.current.flip {
 	-webkit-transform: scale(1) rotateY(-180deg) translateZ(-1px);
 	transform: scale(1) rotateY(-180deg) translateZ(-1px);
 	background: black;
+	text-align: center;
 }
 
 .photostack nav span.flippable::after {
 	opacity: 1;
 	-webkit-transition-delay: 0.4s;
 	transition-delay: 0.4s;
+	text-align: center;
 }
 
 /* Overlays */
@@ -171,6 +176,7 @@
 .js .photostack::before {
 	content: '';
 	position: absolute;
+	text-align: center;
 	width: 100%;
 	height: 100%;
 	background: rgba(0,0,0,0.5);
@@ -184,6 +190,7 @@
 .js .photostack-start::before {
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
+	text-align: center;
 }
 
 /* Button on photostack container */
@@ -232,6 +239,7 @@
 	background: rgba(0,0,0,0.05);
 	-webkit-transition: opacity 0.6s;
 	transition: opacity 0.6s;
+	text-align: center;
 }
 
 /* Hide figure overlay when it becomes current */
@@ -303,6 +311,7 @@ figure.photostack-current::after {
 
 /* Since we don't have back sides for the first photo stack, we don't want the current dot to become too big */
 #photostack-1 nav span.current {
+	text-align: center;
 	background: #888;
 	-webkit-transform: scale(0.61);
 	transform: scale(0.61);

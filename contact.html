@@ -1,37 +1,197 @@
- <!-- <div id="contactPage">
-            <div> -->
-                <!-- google API location -->
-           <!--  </div>
+<!DOCTYPE html>
+<html>
 
-            <div> -->
-                <!-- PHP contact form via SendGrid API -->
-                <form method="post" action="contact.php" id="contactForm">
-                    <p>
-                        <label for="firstName">First Name: </label>
-                        <input class="form-input" display-name="First Name" type="text" name="firstName" id="firstName"></input>
-                    </p>
-                    <p>
-                        <label for="emailAddress">Email: </label>
-                        <input class="form-input" display-name="Email" type="text" name="email" id="email"></input>
-                    </p>
-                    <p>
-                        <label for="phoneNumber">Phone: </label>
-                        <input class="form-input" display-name="Phone" type="text" name="phoneNumber" id="phoneNumber"></input>
-                    </p>
-                    <p>
-                        <label for="emailMsg">Message: </label>
-                        <textarea class="form-input" display-name="Message" type="text" name="emailMsg" id="emailMsg"></textarea>
-                    </p>
-                </form>
-                <button id="submitButton">
-                    Submit
-                </button>
+<head>
+    <meta charset="UTF-8">
+    <title>Salon Gregories</title>
 
-                <!--Hours and location,
-                 phone num and address  -->
+    <!-- jQuery CDN -->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
+    <!-- CSS normalize & Link to main CSS -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-                <!-- Email Subscribe form -->
-         <!--    </div>
+    <!-- Link to polaroid gallery CSS -->
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    <link rel="stylesheet" type="text/css" href="css/component.css">
+
+    <!-- Main Javascript/jQuery  -->
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <!-- Javascript Links for polaroid gallery -->
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/photostack.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div id="navLogo">
+            <div id="logo">
+                <a href="#">
+                    <img src="images/logo.png"/>
+                </a>
+            </div>
+            <div id="phoneNumber">
+                <p>200 Newport Ctr Dr, Newport, CA</p>
+                <p>949.644.6671</p>
+            </div>
+            <div id="socialMedia">
+                <ul>
+                    <li id="instagram">
+                        <a href="http://instagram.com/salongregories.nb" target="_blank">
+                            <img src="images/instagram.png"/>
+                        </a>
+                    </li>
+                    <li id="facebook">
+                        <a href="https://www.facebook.com/salongregories" target="_blank">
+                            <img src="images/facebook.png" />
+                        </a>
+                    </li>
+                    <li id="yelp">
+                        <a href="http://www.yelp.com/biz/salon-gregories-newport-beach-2" target="_blank">
+                            <img src="images/yelp.png" />
+                        </a>
+                    </li>
+                    <li id="pinterest">
+                        <a href="#" target="_blank">
+                            <img src="images/pinterest.png" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
- -->
+
+        <!-- End Social Media DIV -->
+
+        <div id="navLinks">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p><a href="index.html" class="navLink">Home</a>
+                            </p>
+                        </td>
+                        <td>
+                            <p><a href="pricing.html" class="navLink">Pricing</a>
+                            </p>
+                        </td>
+                        <td>
+                            <p><a href="stylists.html" class="navLink">Stylists</a>
+                            </p>
+                        </td>
+                        <td>
+                            <p><a href="gallery.html" class="navLink">Our Work</a>
+                            </p>
+                        </td>
+                        <td>
+                            <p><a href="contact.html" class="navLink">Contact</a>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <hr>
+        </div>
+    </nav>
+
+    <!-- End Nav Bar -->
+
+    <main>
+        <div id="container">
+            <div id="mainContent">
+            <!-- Contact page-->
+                <div id="mainLeft">
+                    <!-- google API location -->
+                </div>
+               
+                <div id="mainRight">
+                    <p>Hours 
+                        <ul>
+                            <li>Monday: 10am - 3pm</li>
+                            <li>Tuesday: 9am - 6pm</li>
+                            <li>Wednesday: 9am - 6pm</li>
+                            <li>Thursday: 9am - 6pm</li>
+                            <li>Friday: 9am - 6pm</li>
+                            <li>Saturday: 8am - 6pm</li>
+                            <li>Sunday: Closed</li>
+                        </ul>
+                    </p><br><br>
+                    <p>Address
+                        <ul>
+                            <li>200 Newport Ctr Dr</li>
+                            <li>Newport Beach, CA 92660</li>
+                        </ul>
+
+                    </p><br>
+                    <p>Phone
+                        <ul>
+                            <li>(949) 644-6671</li>
+                        </ul>
+                    </p><br><br>
+                    <p>
+                        Please call us to book an appointment, or for general questions. For non-urgent inquiries, feel free to contact us below.
+                    </p><br>
+                    <!-- PHP contact form via SendGrid API -->
+                    <form method="post" action="contact.php" id="contactForm">
+                        <p>
+                            <label for="firstName">First Name: </label>
+                            <input class="form-input" display-name="First Name" type="text" name="firstName" id="firstName"></input>
+                        </p><br>
+                        <p>
+                            <label for="emailAddress">Email: </label>
+                            <input class="form-input" display-name="Email" type="text" name="email" id="email"></input>
+                        </p><br>
+                        <p>
+                            <label for="phoneNumber">Phone: </label>
+                            <input class="form-input" display-name="Phone" type="text" name="phoneNum" id="phoneNum"></input>
+                        </p><br>
+                        <p>
+                            <label for="emailMsg">Message: </label>
+                            <textarea class="form-input" display-name="Message" type="text" name="emailMsg" id="emailMsg"></textarea>
+                        </p>
+                    </form>
+                    <button id="submitButton">
+                        Submit
+                    </button>
+                </div>
+            </div>
+
+            <div id="vertical">
+                <ul id="verticalNamePricing">
+                    <li>C</li>
+                    <li>O</li>
+                    <li>N</li>
+                    <li>T</li>
+                    <li>A</li>
+                    <li>C</li>
+                    <li>T</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- End Main Container DIV -->
+
+        <div>
+            <hr>
+        </div>
+
+        <footer>
+            <div id="copyright">
+                <p>Copyright &copy; 2015 Salon Gregories.
+                    <!-- {Crafted by <a href="mailto:ronwcanada@gmail.com?Subject=Hello%20there!" target="_top">Ron Canada</a>} -->
+                </p>
+            </div>
+        </footer>
+
+        <!-- End Footer -->
+
+    </main>
+</body>
+
+</html>
+
+ 

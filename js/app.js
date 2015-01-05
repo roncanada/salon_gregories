@@ -1,8 +1,6 @@
 $(document).ready(function() {
 	console.log('dom ready');
 
-
-
 	//allows the background image to resize with the window
 	//for responsive design
 
@@ -18,8 +16,6 @@ $(document).ready(function() {
 	// });
 
 
-
-
 	//fade in main
 
 	// $(window).load(function() {
@@ -27,7 +23,6 @@ $(document).ready(function() {
 	// 	$(window).resize()
 	// });
 	
-
 
 
 	//Validate and run the contact form
@@ -50,8 +45,4 @@ $(document).ready(function() {
 					//console.log(item)
 				}
 			} );
-
-
-	
-
 })

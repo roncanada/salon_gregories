@@ -33,8 +33,8 @@ try {
     setFrom('ContactForm@betterwithgrid.com')->
     setReplyTo($_POST['emailAddress'])->
     addTo('ron.canada@sendgrid.com')->
-    setSubject('Salon Gregories Contact Form Inquiry From'.$_POST['firstName'])->
-    setText("Call back number (if provided): ".$_POST['phoneNumber']
+    setSubject('Salon Gregories Contact Form Inquiry From '.$_POST['firstName'])->
+    setText("Call back number (if provided): ".$_POST['phoneNum']
     	."\n\n".$_POST['emailMsg']);
     
     $response = $sendgrid->send( $mail );

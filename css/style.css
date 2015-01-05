@@ -124,29 +124,28 @@ main {
     top: 60px;
     vertical-align: middle;
     text-align: center;
-    font-size: 80px;
+    font-size: 35px;
     font-family: Didot, “Didot LT STD”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
 }
-
-
 #verticalNamePricing {
     position: relative;
     top: 60px;
     vertical-align: middle;
     text-align: center;
-    font-size: 50px;
+    font-size: 48px;
     font-family: Didot, “Didot LT STD”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
 }
-
-
-
-
-
-
-
-
-
-
+#verticalNameStylists {
+    position: relative;
+    top: 60px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 42px;
+    font-family: Didot, “Didot LT STD”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
+}
+#containerScroll {
+    overflow:auto;
+}
 .priceTitle{
     text-align: center;
     text-decoration: underline;
@@ -173,12 +172,59 @@ main {
     padding-top: 40px;
 }
 #mainContent hr{
-    
+    clear: both; 
+    float: none; 
+    width: 100%; 
+    height: 2px;
+    margin: 1.4em 0;
+    border: none; 
+    background: #ddd;
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0.5, rgb(221,221,221)),
+      color-stop(0.5, rgb(255,255,255))
+  );
+  background-image: -moz-linear-gradient(
+      center top,
+      rgb(221,221,221) 50%,
+      rgb(255,255,255) 50%
+  );
 }
 
 
+#mainLeft {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 54%;
+    border: 1px orange solid;
+}
+
+#mainRight {
+    font-family: Didot, “Didot LT STD”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
+    color: black;
+    text-align: center;
+    position: relative;
+    float: right;
+    height: 100%;
+    width: 45%;
+    font-size: 12px;
+    border: 1px pink solid;
+    overflow:auto;
+}
+#mainRight li{
+    font-family: Didot, “Didot LT STD”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
+    color: black;
+    font-size: 12px;
+}
 
 
+#submitButton {
+    font-family: Didot, “Didot LT STD”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
+    text-align: center;
+}
 
 
 

@@ -1,32 +1,49 @@
 $(document).ready(function() {
 	console.log('dom ready');
 
-	//allows the background image to resize with the window
-	//for responsive design
+	// Create, append class, and links to NavBar
+	var navLinks = $("#navLinks");
+	if (navLinks) {
 
-	// $(window).resize(function() {
-	// 	var imageWidth = 1800;
-	// 	var imageHeight = 2700;
-	// 	var imageRatio = imageHeight / imageWidth;
+		console.log(navLinks);
+		var table = jQuery('<table/>')
+		var tbody = jQuery('<tbody/>').appendTo(table)
+		var tr = jQuery('<tr/>').appendTo(tbody)
 
-	// 	var mainWidth = window.innerWidth;
-	// 	var mainHeight = (imageHeight * mainWidth) / imageWidth;
+		var items = [
+			{
+				title: "Home",
+				href: "index.html"
+			}, {
+				title: "Pricing",
+				href: "pricing.html"
+			}, {
+				title: "Stylists",
+				href: "stylists.html"
+			}, {
+				title: "Our Work",
+				href: "gallery.html"
+			}, {
+				title: "Contact",
+				href: "contact.html"
+			}
+		]
 
-	// 	$('main').css('height', mainHeight + 'px');
-	// });
+		for (var i = 0; i < items.length; i++) {
+			var currentItem = items[i];
+			var td = jQuery('<td/>').appendTo(tr);
+			var a = jQuery('<a/>').attr('href', currentItem.href).addClass('navLink').appendTo(td);
+			var p = jQuery('<p/>').text(currentItem.title).appendTo(a);
+			console.log(td);
+		}
 
-
-	//fade in main
-
-	// $(window).load(function() {
-	// 	$('body').fadeIn(1200)
-	// 	$(window).resize()
-	// });
-	
-
+		table.appendTo(navLinks);
+	} else {
+		console.log("Couldn't set up nav bar: no #navLinks element found.")
+	}
 
 	//Validate and run the contact form
-	$('#submitButton').click(function(){
+	$('#submitButton').click(function() {
 		var valid = true;
 		$(".form-input").each(function() {
 			if ($(this).val().length == 0 && valid) {
@@ -40,9 +57,31 @@ $(document).ready(function() {
 	})
 
 	//Polaroid java script 
-	new Photostack( document.getElementById( 'photostack-3' ), {
-				callback : function( item ) {
-					//console.log(item)
-				}
-			} );
+	new Photostack(document.getElementById('photostack-3'), {
+		callback: function(item) {
+		}
+	});
 })
+
+	//Google Maps API on contact page
+	function initialize() {
+		var mapCanvas = document.getElementById('googleMaps');
+		var salonGregories = new google.maps.LatLng(33.612422,-117.874326);
+		var mapOptions = {
+			center: new google.maps.LatLng(33.612422,-117.874326),
+			zoom: 13,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		}
+		var map = new google.maps.Map(mapCanvas, mapOptions)
+
+		var marker = new google.maps.Marker({
+		    position: salonGregories,
+		    map: map,
+		    title: 'Salon Gregories'  
+  		});
+		$('#googleMaps').click(function() {
+			window.open('http://maps.apple.com/?q=SalonGregories Newport Beach');
+		})
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+

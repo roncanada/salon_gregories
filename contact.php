@@ -10,13 +10,13 @@
 require 'vendor/autoload.php';
 
 
-/* USER CREDENTIALS
+/* Authentication
 ====================================================*/
 $sg_username = "salon_gregories_admin";
 $sg_password = "SalonGregories2015";
 
 
-/* CREATE THE SENDGRID MAIL OBJECT
+/* Create mail object
 ====================================================*/
 $sendgrid = new SendGrid( $sg_username, $sg_password );
 $mail = new SendGrid\Email();
@@ -42,23 +42,39 @@ try {
     if (!$response) {
         throw new Exception("Did not receive response.");
 ?>
-<p><strong>Yikes!</strong> It looks like something went wrong. Please click here to try again.</p>
+<p><strong>Yikes!</strong> It looks like something went wrong. Please call us at (949) 644-6671 to contact us.</p>
 <?php
     } else if ($response->message && $response->message == "error") {
         throw new Exception("Received error: ".join(", ", $response->errors));
 ?>
-<p><strong>Yikes!</strong> It looks like something went wrong. Please click here to try again.</p>
+<p><strong>Yikes!</strong> It looks like something went wrong. Please call us at (949) 644-6671 to contact us.</p>
 <?php
     } else {
         
 ?>
+
+<!-- Success Response Page HTML -->
+
+
         <p><strong>Thanks!</strong> We got your message and you'll be hearing from us soon.</p>
+
+
+
+
+
+
+
+
+
+
+
+
 <?php
     }
 } catch ( Exception $e ) {
     var_export($e);
 ?>
-    <p><strong>Yikes!</strong> It looks like something went wrong. Please click here to try again.</p>
+    <p><strong>Yikes!</strong> It looks like something went wrong. Please call us at (949) 644-6671 to contact us.</p>
 <?php
 }
 

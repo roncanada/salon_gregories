@@ -1,12 +1,12 @@
-/*--- CSS PAGE ---*/
+/*--- Main CSS ---*/
 html {
     margin: 10px;
     font-family: Didot, “Didot LT STD”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
 }
-/*--- NAV CSS ---*/
+/*--- Navigation bar CSS ---*/
 nav {
     width: 100%;
-    color: black;
+    color: white;
     text-align: center;
     font-weight: normal;
     display: inline-block;
@@ -21,8 +21,14 @@ nav {
     max-width: 60%;
     height: auto;
 }
+
+
+
+
+
+
+
 nav a {
-    color: white;
     text-decoration: none;
 }
 nav table {
@@ -44,10 +50,25 @@ nav table td {
     -o-transition: all 0.5s linear;
     transition: all 0.5s linear;
 }
+
+#navLinks td > a {
+    color: white !important;
+}
+
 #navLinks td:hover {
     background-color: white;
+    cursor: hand;
 }
+
+#navLinks td:hover > a {
+    color: black !important;
+}
+
+
+
+
 #phoneNumber {
+    color: black;
     position: relative;
     float: left;
     top: 0px;
@@ -66,14 +87,17 @@ nav table td {
     padding: 0px;
     margin: 0px;
 }
-#socialMedia li {
-    
-}
 #socialMedia img {
     max-width: 50%;
     height: auto;
 }
+/*--- END NAV CSS ---*/
 
+/*--- START MAIN CSS ---*/
+#container {
+    height: 450px;
+    margin-bottom: 20px;
+}
 hr {
     clear: both;
     float: none;
@@ -84,15 +108,6 @@ hr {
     background: #000000;
     background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0, rgb(255, 255, 255)), color-stop(0.1, rgb(80, 80, 80)), color-stop(0.9, rgb(80, 80, 80)), color-stop(1, rgb(255, 255, 255)));
     background-image: -moz-linear-gradient( left center, rgb(255, 255, 255) 0%, rgb(221, 221, 221) 10%, rgb(221, 221, 221) 90%, rgb(255, 255, 255) 100%);
-}
-/*--- END NAV CSS ---*/
-/*--- START MAIN CSS ---*/
-main {
-
-}
-#container {
-    height: 450px;
-    margin-bottom: 20px;
 }
 #mainContent {
     position: relative;
@@ -127,6 +142,15 @@ main {
     font-size: 35px;
     font-family: Didot, “Didot LT STD”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
 }
+
+/*Pricing and Stylist page CSS*/
+#salonPhoto{
+    text-align: center;
+    padding: 40px 0px;
+}
+#salonPhoto img {
+    box-shadow: 1px .5px 3px 2px rgba(10, 10, 0, 0.4);
+}
 #verticalNamePricing {
     position: relative;
     top: 60px;
@@ -145,6 +169,7 @@ main {
 }
 #containerScroll {
     overflow:auto;
+    height: 450px;
 }
 .priceTitle{
     text-align: center;
@@ -152,6 +177,9 @@ main {
     color: black;
     font-size: 22px;
     font-family: Didot, “Didot LT STD”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
+}
+#lorealLogo {
+    text-align: center;
 }
 #mainContent li{
     color: black;
@@ -171,6 +199,97 @@ main {
     text-align: center;
     padding-top: 40px;
 }
+
+
+/*Gallery CSS*/
+#verticalNameGallery {
+    position: relative;
+    top: 60px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 42px;
+    font-family: Didot, “Didot LT STD”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
+}
+.wrap {
+    width:100%;
+    height: 100%;
+    overflow:auto;
+    padding: 0 5%;
+}
+.relef {
+    position: relative;
+    float: left;
+}
+.relri {
+    position: relative;
+    float: right;
+}
+    .segment {
+        width:100%;
+        height:auto;
+    }
+    .row {
+        height:auto;
+        width:100%;
+    }
+    .box{
+        height:auto;
+        width:auto;
+        margin:1px;
+    }
+    .bigbox {
+        height:auto;
+        width:auto;
+        margin:1px;
+    }
+img.grayscale {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(90%); /* Chrome 19+ & Safari 6+ */
+}
+img.grayscale:hover {
+  filter: none;
+  -o-transition:.7s;
+  -ms-transition:.7s;
+  -moz-transition:.7s;
+  -webkit-transition:.7s;
+  transition:.7s;
+  -webkit-filter: grayscale(0%);
+}
+
+.lightbox {
+  /** Hide the lightbox */
+  display: none;
+
+  /** Apply basic lightbox styling */
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: black;
+  background: rgba(0,0,0,0.9);
+}
+
+.lightbox img {
+  /** Pad the lightbox image */
+  max-width: 90%;
+  max-height: 80%;
+  margin-top: 4%;
+}
+
+.lightbox:target {
+  /** Show lightbox when it is target */
+  display: block;
+
+  /** Remove default browser outline style */
+  outline: none;
+}
+
+
+/*Container hr CSS*/
 #mainContent hr{
     clear: both; 
     float: none; 
@@ -193,16 +312,25 @@ main {
   );
 }
 
-
+/*Contact Page Specific CSS*/
 #mainLeft {
     position: relative;
     float: left;
     height: 100%;
     width: 54%;
-    border: 1px orange solid;
+    text-align: center;
+    font-family: Didot, “Didot LT STD”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
+    font-size: 12px;
+    color: black;
 }
-
-#mainRight {
+#googleMaps {
+    width: 80%;
+    height: 70%;
+    margin: 0 auto 0 auto;
+    background: black;
+    box-shadow: 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+}
+#mainRight{
     font-family: Didot, “Didot LT STD”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
     color: black;
     text-align: center;
@@ -210,36 +338,93 @@ main {
     float: right;
     height: 100%;
     width: 45%;
-    font-size: 12px;
-    border: 1px pink solid;
+    font-size: 16px;
     overflow:auto;
 }
 #mainRight li{
     font-family: Didot, “Didot LT STD”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
     color: black;
-    font-size: 12px;
+    font-size: 16px;
 }
-
-
 #submitButton {
     font-family: Didot, “Didot LT STD”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
     text-align: center;
 }
+#contactTitle {
+    text-decoration: underline;
+    font-family: Didot, “Didot LT STD”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
+}
+form {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding: 3%;
+}
+*:focus {
+    outline: none;
+}
+button {
+    background-color: black;
+    color: white;
+    font-family: Didot, “Didot LT STD”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 5px 10px;
+    text-transform: none;
+    border: none;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    width: 100px;
+    height: 30px;
+}
+button:hover {
+    background-color: white;
+    color: black;
+    border: 1px black solid;
+}
+h2 {
+    text-align: center;
+    padding: 10px;
+}
+#contactForm, #contactForm input, #contactForm textarea {
+    width:100%;
+}
+#contactForm textarea {
+    resize:vertical;
+}
+#contactForm td:first-child{
+    width: 100px;
+    text-align: right;
+    vertical-align: top;
+}
+#contactForm table { 
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+input[type="text"], textarea[type="text"] { 
+    border: 1px solid black; 
+    font-family: Didot, “Didot LT STD”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
+    font-size: 16px;
+    box-shadow: 0px .5px 2px 1px rgba(10, 10, 0, 0.2);
+    -moz-box-shadow: rgba(10,10,0, 0.2) 0px 0px 8px; 
+    -webkit-box-shadow: rgba(10,10,0, 0.2) 0px 0px 8px; 
+}
+input:hover, textarea:hover, 
+input:focus, textarea:focus { 
+    -webkit-box-shadow: rgba(0, 0, 0, 0.55) 0px 0px 8px; 
+    }
 
 
 
-
-
-
-
-
+/*Footer CSS*/
 footer {
     width: 100%;
     position: relative;
     height: 24px;
     bottom: 0px;
     left: 0px;
-    color: darkgray;
+    color: white;
     background: black;
     font-size: 10px;
     text-align: center;
@@ -251,12 +436,12 @@ footer {
 }
 footer a {
     text-decoration: none;
-    color: darkgray;
+    color: white;
 }
 footer a:hover {
-    color: darkgray;
+    color: white;
 }
 footer a.active {
-    color: darkgray;
+    color: white;
 }
 /*--- END MAIN CSS ---*/

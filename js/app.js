@@ -28,7 +28,6 @@ $(document).ready(function() {
 				href: "contact.html"
 			}
 		]
-
 		for (var i = 0; i < items.length; i++) {
 			var currentItem = items[i];
 			var td = jQuery('<td/>').appendTo(tr);
@@ -36,10 +35,9 @@ $(document).ready(function() {
 			var p = jQuery('<p/>').text(currentItem.title).appendTo(a);
 			console.log(td);
 		}
-
 		table.appendTo(navLinks);
 	} else {
-		console.log("Couldn't set up nav bar: no #navLinks element found.")
+		console.log("Shit's Broken. Couldn't create navbar to navLinks.")
 	}
 
 	//Validate and run the contact form

@@ -21,13 +21,6 @@ nav {
     max-width: 60%;
     height: auto;
 }
-
-
-
-
-
-
-
 nav a {
     text-decoration: none;
 }
@@ -50,23 +43,16 @@ nav table td {
     -o-transition: all 0.5s linear;
     transition: all 0.5s linear;
 }
-
 #navLinks td > a {
     color: white !important;
 }
-
 #navLinks td:hover {
     background-color: white;
     cursor: hand;
 }
-
 #navLinks td:hover > a {
     color: black !important;
 }
-
-
-
-
 #phoneNumber {
     color: black;
     position: relative;
@@ -382,6 +368,7 @@ button:hover {
     background-color: white;
     color: black;
     border: 1px black solid;
+    cursor: pointer;
 }
 h2 {
     text-align: center;
@@ -413,7 +400,25 @@ input[type="text"], textarea[type="text"] {
 input:hover, textarea:hover, 
 input:focus, textarea:focus { 
     -webkit-box-shadow: rgba(0, 0, 0, 0.55) 0px 0px 8px; 
-    }
+}
+
+/*CSS landing page email confirmation*/
+#landingPage {
+    text-align: center;
+    color: black;
+    font-family: Didot, “Didot LT STD”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
+    font-size: 18px;
+    vertical-align: middle;
+    padding: 10% 0;
+}
+#craftedBy {
+    text-align: center;
+    color: black;
+    font-family: Didot, “Didot LT STD”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
+    font-size: 12px;
+    vertical-align: middle;
+    padding: 10% 0;
+}
 
 
 
